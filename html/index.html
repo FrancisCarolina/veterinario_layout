@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vet Layout</title>
+    <link
+      rel="stylesheet"
+      href="../css/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav class="row">
+            <div class="col-12 col-md-6 col-lg-6 col-sm-12 logo">
+                <img src="../img/logo.png" alt="logo">
+            </div>
+            <div class="col-12 col-md-5 col-lg-5 col-sm-12 pages">
+                <a href="#home" >Home</a>
+                <a href="#about">About</a>
+                <a href="#service">Service</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main class="row" >
+        <section class="col-lg-6 col-sm-12">
+            <h1>Fist I wanted to be a veterinarian</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, quasi modi velit itaque numquam aliquid perferendis</p>
+            <div class="mainBotoes">
+                <button class="btn btn-primary btn-lg">Contact Us</button>
+                <button class="btn btn-outline-light btn-lg">Our Service</button>
+            </div>
+        </section>
+        <section class="col-lg-4 col-sm-12 dogContainer">
+            <figure>
+                <img src="../img/dog.png" alt="mainDog">
+            </figure>
+        </section>
+    </main>
+    <section class="vetTeamContainer">
+        <h1>The vetcare team</h1>
+        <div class="descricao">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-12 cardTeam">
+                <img src="../img/team-vet1.png" alt="vet1" class="imgTeam">
+                <h3>Jeniffer Mullen</h3>
+                <span class="cargo">VETERINARY</span>
+            </div>
+            <div class="col-lg-4 col-sm-12 cardTeam">
+                <img src="../img/team-vet2.png" alt="vet2" class="imgTeam">
+                <h3>Sheeren Collins</h3>
+                <span class="cargo">ADMINISTRATION</span>
+            </div>
+            <div class="col-lg-4 col-sm-12 cardTeam">
+                <img src="../img/team-vet3.png" alt="vet3" class="imgTeam">
+                <h3>Jeniffer Mullen</h3>
+                <span class="cargo">VETERINARY</span>
+            </div>
+        </div>
+    </section>
+    <section class="servicesContainer">
+        <h1>Title Here</h1>
+        <div class="descricao">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-12 cardService">
+                <img src="../img/service3.png" alt="vet1" class="imgService">
+                <h3 class="titulo">Veterinarian</h3>
+                <div class="sobre">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                </div>
+                <button class="botao">See more</button>
+            </div>
+            <div class="col-lg-4 col-sm-12 cardService">
+                <img src="../img/service2.png" alt="vet2" class="imgService">
+                <h3 class="titulo">Vaccination Care</h3>
+                <div class="sobre">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                </div>
+                <button class="botao">See more</button>
+            </div>
+            <div class="col-lg-4 col-sm-12 cardService">
+                <img src="../img/service3.png" alt="vet3" class="imgService">
+                <h3 class="titulo">Detal Care</h3>
+                <div class="sobre">
+                    <span >Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                </div>
+                <button class="botao">See more</button>
+            </div>
+        </div>
+    </section>
+    <section class="formContainer">
+        <h1>Title Here</h1>
+        <div class="descricao">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+        </div>
+        <form class="formulario" id="myForm">
+            <div class="inputContainer">
+                <div class="labelContainer">
+                    <label for="name">Name:</label>
+                    <span class="requiredMark">*</span>
+                </div>
+                <input type="text" id="name" name="name"/>
+                <p style="color: white;" id="nameRequired">Preencha este campo!</p><br /><br />
+            </div>
+
+            <div class="inputContainer">
+                <div class="labelContainer">
+                    <label for="number">Phone Number:</label>
+                    <span class="requiredMark">*</span>
+                </div>
+                <input type="number" id="number" name="number"  />
+                <p style="color: white;" id="numberRequired">Preencha este campo!</p><br /><br />
+            </div>
+
+            <div class="inputContainer">
+                <div class="labelContainer">
+                    <label for="email">E-mail: </label>
+                    <span class="requiredMark">*</span>
+                </div>
+                <input type="email" id="email" name="email"  />
+                <p style="color: white;" id="emailRequired">Preencha este campo!</p><br /><br />
+            </div>
+            
+            <div class="inputContainer">
+                <div class="labelContainer">
+                    <label for="date">Date:</label>
+                    <span class="requiredMark">*</span>
+                </div>
+                <input type="date" id="date" name="date"/>
+                <p style="color: white;" id="dateRequired">Preencha este campo!</p><br /><br />
+            </div>
+
+            <div class="inputContainer">
+                <div class="labelContainer">
+                    <label for="message">Message:</label>
+                    <span class="requiredMark">*</span>
+                </div>
+                <textarea rows="5" id="message" name="message"  ></textarea>
+                <p style="color: white;"  id="messageRequired">Preencha este campo!</p>
+            </div>
+            <div class="bototesform">
+                <button type="reset" class="botaoClear" id="clearBotao">Clear</button>
+                <input type="submit" class="botaoSubmit" id="botaoSend" title="Send" ></input>
+            </div>
+        </form>
+        
+    </section>
+    <footer  style="background-color: rgb(29, 24, 0); padding: 30px;">
+        <div class="row" style="width: 100%;display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h3 style="color: #ffff;">About</h3>
+                    <div style="display: flex; flex-direction: column">
+                        <a href="" style="color: #ffff;">History</a>
+                        <a href="" style="color: #ffff;">Our Team</a>
+                        <a href="" style="color: #ffff;">Brand Guidelines</a>
+                        <a href="" style="color: #ffff;">Teams & Condition</a>
+                        <a href="" style="color: #ffff;">Privacy Policy</a>
+                    </div>
+                
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h3 style="color: #ffff;">Title here</h3>
+                <span style="color: #ffff;">Lorem ipsum dolor sit amet consectetur.</span>
+                <div style="margin-top: 30px;">
+                    <img src="../img/icon-insta.png" alt="insta">
+                    <img src="../img/icon-face.png" alt="face">
+                    <img src="../img/footer-icon-twitter.png" alt="twitter">
+                    <img src="../img/icon-whats.png" alt="whatsapp">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="../script/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>
